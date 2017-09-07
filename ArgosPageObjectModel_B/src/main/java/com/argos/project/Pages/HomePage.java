@@ -8,7 +8,7 @@ public class HomePage extends WebElementActions {
 	By Technology_lnk = By.xpath("//div[contains(@class,'meganav--desktop')]//a[text()='Technology']");
 	By TelevisionAndAccessories_lnk = By.xpath("//a[text()='Televisions & accessories']");
 	
-	
+	//added committ line
     public HomePage(WebDriver driver) {
 		 super(driver);
 		

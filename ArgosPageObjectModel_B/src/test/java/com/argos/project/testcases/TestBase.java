@@ -11,7 +11,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class TestBase {
 
 	public WebDriver driver;
-
+   //added new comment by rajkumar
 	public WebDriver getDriver(String browserName) {
 
 		if ("chrome".equalsIgnoreCase(browserName)) {
