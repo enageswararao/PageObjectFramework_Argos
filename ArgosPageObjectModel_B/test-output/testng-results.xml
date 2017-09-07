@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54966" started-at="2017-09-03T06:45:06Z" finished-at="2017-09-03T06:46:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54966" started-at="2017-09-03T06:45:06Z" finished-at="2017-09-03T06:46:01Z">
+      <class name="com.argos.project.testcases.TelevisionProductTestCase">
+        <test-method status="PASS" signature="initiateDriver()[pri:0, instance:com.argos.project.testcases.TelevisionProductTestCase@77caeb3e]" name="initiateDriver" is-config="true" duration-ms="10862" started-at="2017-09-03T12:15:06Z" finished-at="2017-09-03T12:15:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateDriver -->
+        <test-method status="PASS" signature="Tc_01_televisionProductTestCase1()[pri:0, instance:com.argos.project.testcases.TelevisionProductTestCase@77caeb3e]" name="Tc_01_televisionProductTestCase1" duration-ms="44064" started-at="2017-09-03T12:15:17Z" description="verify the no of product in LED after selecting option in the By Screen type" finished-at="2017-09-03T12:16:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Tc_01_televisionProductTestCase1 -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.argos.project.testcases.TelevisionProductTestCase@77caeb3e]" name="closeDriver" is-config="true" duration-ms="0" started-at="2017-09-03T12:16:01Z" finished-at="2017-09-03T12:16:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.argos.project.testcases.TelevisionProductTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
