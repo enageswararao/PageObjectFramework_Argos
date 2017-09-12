@@ -43,4 +43,18 @@ public class WebElementActions {
 		List<WebElement> elementslist=driver.findElements(by);
 		return elementslist.size();
  	}
+	 
+	public int getExpectedProductCount(By by)  {
+		WebElement expectedTxt = driver.findElement(by);
+		String txt = expectedTxt.getText();	
+		String text = txt.split(" ")[0];
+		int expctd = Integer.valueOf(text); 
+		return expctd;
+			}
+	
+	
+	public String getText(By by){
+		WebElement expectedTxt = driver.findElement(by);
+		return expectedTxt.getText();
+	}
 }

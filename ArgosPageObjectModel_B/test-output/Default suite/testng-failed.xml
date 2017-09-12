@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.argos.project.testcases.TelevisionProductTestCase">
+      <class name="com.argos.project.testcases.TelevisionProductTestCase_part2">
         <methods>
+          <include name="Tc_06_addtheitemtoTrolley"/>
           <include name="initiateDriver"/>
-          <include name="Tc_01_televisionProductTestCase1"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- com.argos.project.testcases.TelevisionProductTestCase -->
+      </class> <!-- com.argos.project.testcases.TelevisionProductTestCase_part2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

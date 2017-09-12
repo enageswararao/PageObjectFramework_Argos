@@ -26,21 +26,22 @@ public class TelevisionProductTestCase extends TestBase {
 	@AfterTest
 	public void closeDriver()  {
 		System.out.println("closing the browser");
+		driver.close();
 	}
 	
 	@Test(description="verify the no of product in built-in- wifi after selecting option ")
 	public void Tc_01_televisionProductTestCase_verify_built_in_wifi_product() throws InterruptedException{
-		HomePage homepage = new HomePage(driver);
-		TelevisionAndAccessoriesPage tvAccessPage = homepage.clickOnLinkTelevisionAndAccessories();
-		TelevisionProductsPage tvpage = tvAccessPage.navigateToTelevisionProductsPage();
+		 HomePage homepage = new HomePage(driver);
+		 TelevisionAndAccessoriesPage tvAccessPage = homepage.clickOnLinkTelevisionAndAccessories();
+		 TelevisionProductsPage tvpage = tvAccessPage.navigateToTelevisionProductsPage();
 		Thread.sleep(5000);
-		tvpage.byInternetConnection();
+		 tvpage.byInternetConnection();
 		 
 		Thread.sleep(5000);
-		tvpage.clickOnShowAllBtn();
+		 tvpage.clickOnShowAllBtn();
 		Thread.sleep(5000);
 		int countofproducts=tvpage.getAllProductCount();
-		Assert.assertEquals(countofproducts, 63);
+		 Assert.assertEquals(countofproducts, 63);
 		 
 	}
 	 

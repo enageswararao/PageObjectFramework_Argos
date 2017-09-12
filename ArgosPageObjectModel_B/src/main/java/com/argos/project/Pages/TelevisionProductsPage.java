@@ -31,7 +31,9 @@ public class TelevisionProductsPage extends WebElementActions {
 	By star_rating_2 =By.xpath( "//input[contains(@value,'2 stars')]/following-sibling::span"); 
 	By star_rating_1_ormore = By.xpath("//input[contains(@value,'1 star or more')]/following-sibling::span"); 
 	
-	
+	// Addto Trolley xpath
+	By addtotrolley=By.xpath("//div[@id='products']/ul/li[1]/dl/dd[@class='actions']/a[@class='button btnbuyreserve addToTrolley']/span[1]");
+	By successmsgaddtrolley=By.xpath("//div[@id='trolleyHeader']/div[1]/div[1]/div[1]/div[1]/div[2]");
  	public TelevisionProductsPage() {
 		super(driver);	
 	} 
@@ -71,4 +73,13 @@ public void clickOnShowAllBtn(){
 	click(showAll);
 }
 	
+
+public void addtoCart(){
+	click(addtotrolley);
+}
+
+public String getTextOnScreen(){
+	return getText(successmsgaddtrolley);
+	
+}
 }

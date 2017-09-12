@@ -7,7 +7,8 @@ public class HomePage extends WebElementActions {
 			
 	By Technology_lnk = By.xpath("//div[contains(@class,'meganav--desktop')]//a[text()='Technology']");
 	By TelevisionAndAccessories_lnk = By.xpath("//a[text()='Televisions & accessories']");
-	
+    By LaptopsAndPCs_lnk = By.xpath("//a[text()='Laptops & PCs']"); 
+
 	//added committ line
     public HomePage(WebDriver driver) {
 		 super(driver);
@@ -21,7 +22,11 @@ public class HomePage extends WebElementActions {
 		
 		return new TelevisionAndAccessoriesPage();
 			}
-	
+	public LaptopsAndPCsPage clickOnLinkLaptopsAndPCs()  {
+		System.out.println("it is a homepage action to navigate to LaptopsAndPCs ");
+		clickSubMenu(Technology_lnk, LaptopsAndPCs_lnk);
+		return new LaptopsAndPCsPage();
+		}
 	
 
 }
